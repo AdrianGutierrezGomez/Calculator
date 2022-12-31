@@ -17,6 +17,31 @@ header,footer{
     flex-direction: column;
 }
 main{
+    flex-direction: column;
     display: flex;
     flex: 1;
+    gap: 5px;
 }
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    gap: 5px;
+}
+.row{
+    display: flex;
+    flex-basis: 100%;
+    gap: 5px;   
+    
+  }
+  .column{
+    background-color: lightblue;
+    display: flex;
+    flex:1;
+  }
