@@ -33,6 +33,7 @@ const degreesBtn = document.getElementById('°');
 const hyperBtn = document.getElementById('hyp');
 const sinBtn = document.getElementById('sin');
 const cosBtn = document.getElementById('cos');
+const tanBtn = document.getElementById('tan');
 const changeDivBtn = document.getElementById('a/b');
 const sqrRootBtn = document.getElementById('sqr');
 const powerTwoBtn = document.getElementById('x²');
@@ -186,6 +187,11 @@ sinBtn.addEventListener('click', () => {
   });
 cosBtn.addEventListener('click', () => {
     displayArray.push("cos(");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
+  });
+  tanBtn.addEventListener('click', () => {
+    displayArray.push("tan");
     displayString = displayArray.toString().replaceAll(",","");
     display.textContent = displayString;
   });
