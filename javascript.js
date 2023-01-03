@@ -58,7 +58,12 @@ const onBtn = document.getElementById('ON');
 let displayString = '';
 let displayArray = [];
 let previousResult = 0;
+let result = 0;
 display.textContent = displayArray;
+
+function operate(){
+return result
+};
 
 // Container three events
 zeroBtn.addEventListener('click', () => {
@@ -78,7 +83,10 @@ ansBtn.addEventListener('click', () => {
     display.textContent = previousResult;
   });
 equalsBtn.addEventListener('click', () => {
-    alert("Hello World");
+    /*operate();
+    displayString = result
+    display.textContent = displayString;*/
+    console.table(displayArray)
   });
 oneBtn.addEventListener('click', () => {
     displayArray.push(1);
