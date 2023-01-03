@@ -1,6 +1,6 @@
 const display = document.getElementById('display');
 
-//container three buttons
+// Container three buttons
 const zeroBtn = document.getElementById('0');
 const dotBtn = document.getElementById('.');
 const tenTimesBtn = document.getElementById('x10^x');
@@ -21,7 +21,7 @@ const eightBtn = document.getElementById('8');
 const nineBtn = document.getElementById('9');
 const delBtn = document.getElementById('DEL');
 const acBtn = document.getElementById('AC');
-//container two buttons 
+// Container two buttons 
 const rclBtn = document.getElementById('RCL');
 const engBtn = document.getElementById('ENG');
 const leftParenthesisBtn = document.getElementById('(');
@@ -43,13 +43,14 @@ const absBtn = document.getElementById('ABS');
 const powerThreeBtn = document.getElementById('x³');
 const powerMinusOneBtn = document.getElementById('x⁻¹');
 const logaBBtn = document.getElementById('logaB');
-//container three buttons
+// Container one buttons
 
 let displayString = '';
 let displayArray = [];
 let previousResult = 0;
 display.textContent = displayArray;
 
+// Container three events
 zeroBtn.addEventListener('click', () => {
     displayArray.push(0);
     displayString = displayArray.toString().replaceAll(",","");
@@ -143,3 +144,68 @@ acBtn.addEventListener('click', () => {
     displayArray = [];
     display.textContent = displayArray.toString();
   });
+
+// Container two events
+rclBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+engBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+leftParenthesisBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+rightParenthesisBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+sdBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+mPlusBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+dashBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+degreesBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+hyperBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+sinBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+cosBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+changeDivBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+sqrRootBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+powerTwoBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+powerNBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+logBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+lnBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+absBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+powerThreeBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+powerMinusOneBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+logaBBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  }); 
