@@ -222,7 +222,7 @@ logBtn.addEventListener('click', () => {
     display.textContent = displayString;
   });
 lnBtn.addEventListener('click', () => {
-    displayArray.push("log(");
+    displayArray.push("ln(");
     displayString = displayArray.toString().replaceAll(",","");
     display.textContent = displayString;
   });
