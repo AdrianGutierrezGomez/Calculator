@@ -1,3 +1,4 @@
+const display = document.getElementById('display');
 const zeroBtn = document.getElementById('0');
 const dotBtn = document.getElementById('.');
 const tenTimesBtn = document.getElementById('x10^x');
@@ -19,63 +20,101 @@ const nineBtn = document.getElementById('9');
 const delBtn = document.getElementById('DEL');
 const acBtn = document.getElementById('AC');
 
+let displayString = '';
+let displayArray = [];
+let previousResult = 0;
+display.textContent = displayArray;
+
 zeroBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(0);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 dotBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(".");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 tenTimesBtn.addEventListener('click', () => {
     alert("Hello World");
   });
 ansBtn.addEventListener('click', () => {
-    alert("Hello World");
+    display.textContent = previousResult;
   });
 equalsBtn.addEventListener('click', () => {
     alert("Hello World");
   });
 oneBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(1);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 twoBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(2);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 threeBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(3);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 plusBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push("+");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;;
   });
 minusBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push("-");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 fourBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(4);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 fiveBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(5);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 sixBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(6);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 multiplicationBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push("x");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 divisionBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push("/");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 sevenBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(7);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 eightBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(8);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 nineBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray.push(9);
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 delBtn.addEventListener('click', () => {
-    alert("Hello World");
-  });
+    displayArray.pop();
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
+});
 acBtn.addEventListener('click', () => {
-    alert("Hello World");
+    displayArray = [];
+    display.textContent = displayArray.toString();
   });
