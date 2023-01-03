@@ -153,10 +153,14 @@ engBtn.addEventListener('click', () => {
     alert("Feature pending, coming soon :).");
   });
 leftParenthesisBtn.addEventListener('click', () => {
-    alert("Feature pending, coming soon :).");
+    displayArray.push("(");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 rightParenthesisBtn.addEventListener('click', () => {
-    alert("Feature pending, coming soon :).");
+    displayArray.push(")");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 sdBtn.addEventListener('click', () => {
     alert("Feature pending, coming soon :).");
@@ -168,16 +172,22 @@ dashBtn.addEventListener('click', () => {
     alert("Feature pending, coming soon :).");
   });
 degreesBtn.addEventListener('click', () => {
-    alert("Feature pending, coming soon :).");
+    displayArray.push("°");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 hyperBtn.addEventListener('click', () => {
     alert("Feature pending, coming soon :).");
   });
 sinBtn.addEventListener('click', () => {
-    alert("Feature pending, coming soon :).");
+    displayArray.push("sin(");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 cosBtn.addEventListener('click', () => {
-    alert("Feature pending, coming soon :).");
+    displayArray.push("cos(");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 changeDivBtn.addEventListener('click', () => {
     alert("Feature pending, coming soon :).");
@@ -192,10 +202,14 @@ powerNBtn.addEventListener('click', () => {
     alert("Feature pending, coming soon :).");
   });
 logBtn.addEventListener('click', () => {
-    alert("Feature pending, coming soon :).");
+    displayArray.push("log(");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 lnBtn.addEventListener('click', () => {
-    alert("Feature pending, coming soon :).");
+    displayArray.push("log(");
+    displayString = displayArray.toString().replaceAll(",","");
+    display.textContent = displayString;
   });
 absBtn.addEventListener('click', () => {
     alert("Feature pending, coming soon :).");
