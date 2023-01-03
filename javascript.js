@@ -45,6 +45,15 @@ const powerThreeBtn = document.getElementById('x³');
 const powerMinusOneBtn = document.getElementById('x⁻¹');
 const logaBBtn = document.getElementById('logaB');
 // Container one buttons
+const downBtn = document.getElementById('down');
+const leftBtn = document.getElementById('left');
+const rightBtn = document.getElementById('right');
+const shiftBtn = document.getElementById('SHIFT');
+const alphaBtn = document.getElementById('ALPHA');
+const upBtn = document.getElementById('up');
+const modeBtn = document.getElementById('MODE');
+const onBtn = document.getElementById('ON');
+
 
 let displayString = '';
 let displayArray = [];
@@ -228,4 +237,30 @@ powerMinusOneBtn.addEventListener('click', () => {
   });
 logaBBtn.addEventListener('click', () => {
     alert("Feature pending, coming soon :).");
-  }); 
+  });
+
+// Container one events
+downBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+leftBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+rightBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+shiftBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+alphaBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+upBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+modeBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
+onBtn.addEventListener('click', () => {
+    alert("Feature pending, coming soon :).");
+  });
