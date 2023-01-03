@@ -1,4 +1,6 @@
 const display = document.getElementById('display');
+
+//container three buttons
 const zeroBtn = document.getElementById('0');
 const dotBtn = document.getElementById('.');
 const tenTimesBtn = document.getElementById('x10^x');
@@ -19,6 +21,29 @@ const eightBtn = document.getElementById('8');
 const nineBtn = document.getElementById('9');
 const delBtn = document.getElementById('DEL');
 const acBtn = document.getElementById('AC');
+//container two buttons 
+const rclBtn = document.getElementById('RCL');
+const engBtn = document.getElementById('ENG');
+const leftParenthesisBtn = document.getElementById('(');
+const rightParenthesisBtn = document.getElementById(')');
+const sdBtn = document.getElementById('SD');
+const mPlusBtn = document.getElementById('M+');
+const dashBtn = document.getElementById('(-)');
+const degreesBtn = document.getElementById('°');
+const hyperBtn = document.getElementById('hyp');
+const sinBtn = document.getElementById('sin');
+const cosBtn = document.getElementById('cos');
+const changeDivBtn = document.getElementById('a/b');
+const sqrRootBtn = document.getElementById('sqr');
+const powerTwoBtn = document.getElementById('x²');
+const powerNBtn = document.getElementById('x^n');
+const logBtn = document.getElementById('log');
+const lnBtn = document.getElementById('ln');
+const absBtn = document.getElementById('ABS');
+const powerThreeBtn = document.getElementById('x³');
+const powerMinusOneBtn = document.getElementById('x⁻¹');
+const logaBBtn = document.getElementById('logaB');
+//container three buttons
 
 let displayString = '';
 let displayArray = [];
